@@ -20,8 +20,9 @@ def homepage():
     <h1>Hello heroku</h1>
     <p>It is currently {time}.</p>
 	<p>It is running {platform_uname}.</p>
+	<p>Pyobdc Driver Name {drive_name}.</p>
 	""".format(time=the_time,
-				platform_uname=platform.uname()))
+				platform_uname=platform.uname(), drivers))
 	
 if __name__ == '__main__':
 	app.run(debug=True, use_reloader=True)
