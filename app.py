@@ -28,8 +28,3 @@ def homepage():
 if __name__ == '__main__':
 	app.run(debug=True, use_reloader=True)
 	
-'''
-<p>It is running {platform_uname} {platform_system}.</p>
-, platform_uname = platform.uname(),
-				platform_system=platform.system()
-'''
